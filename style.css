@@ -1,0 +1,222 @@
+/* Base Styling */
+body {
+  background-color: #fff0f3; 
+  font-family: 'Fredoka', sans-serif;
+  color: #4a3b32;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+}
+
+/* Typography Headers */
+h1, h2, h3 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #c97a8e;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  text-align: center;
+  font-style: italic;
+  color: #8a7366;
+  margin-top: 0;
+}
+
+/* Base Card Designs */
+.hero-section, .action-card {
+  background: #ffffff;
+  border: 3px double #ffb3c6; 
+  border-radius: 16px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 10px rgba(201, 122, 142, 0.15);
+}
+
+/* Dotted Circular Avatar Border */
+.capy-avatar {
+  display: block;
+  margin: 0 auto 15px auto;
+  border-radius: 50%;
+  border: 5px dotted #ff85a1;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  padding: 5px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+/* --- MEGA FUN THEME MODIFICATIONS --- */
+.mega-fun-theme {
+  background: linear-gradient(135deg, #ffffff, #fff5f7);
+  border: 4px dashed #ff85a1 !important; 
+  border-radius: 24px !important;
+  position: relative;
+  overflow: hidden;
+  padding: 30px;
+}
+
+.badge-title {
+  background-color: #ff85a1;
+  color: white !important;
+  font-family: 'DynaPuff', cursive;
+  padding: 10px 20px;
+  border-radius: 50px 20px 50px 20px; 
+  display: inline-block;
+  margin: 0 auto 20px auto;
+  font-size: 1.8rem;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 3px 5px 0px #c97a8e;
+}
+
+.activities-box {
+  background-color: #fff9fa;
+  border: 3px solid #ffccd5;
+  border-radius: 20px 0px 20px 0px; 
+  padding: 20px;
+  margin-top: 25px;
+}
+
+.box-subtitle {
+  font-family: 'DynaPuff', cursive;
+  color: #c97a8e;
+  text-align: left;
+  margin-top: 0;
+}
+
+.background-bubble {
+  background-color: #e8f5e9;
+  padding: 4px 10px;
+  border-radius: 15px 50px 30px 15px; 
+}
+
+.background-pill {
+  background-color: #e3f2fd;
+  padding: 2px 12px;
+  border-radius: 30px; 
+}
+
+.font-fun { font-family: 'Fredoka', sans-serif; font-weight: 700; }
+.font-handwriting { font-family: 'Caveat', cursive; }
+.font-bubble { font-family: 'DynaPuff', cursive; font-weight: 700; }
+
+.size-small { font-size: 0.85rem; }
+.size-medium { font-size: 1.25rem; }
+.size-large { font-size: 1.4rem; }
+.size-xlarge { font-size: 1.9rem; }
+
+.style-uppercase { text-transform: uppercase; letter-spacing: 1px; }
+.style-italic { font-style: italic; }
+.shadow-text { text-shadow: 2px 2px 0px #ffccd5; }
+
+.color-pop { color: #ff5c8a; }
+.color-wave { color: #0288d1; }
+.color-yuzu { color: #f5b000; }
+.color-grass { color: #2e7d32; }
+.color-calm { color: #2e7d32; font-weight: bold; }
+.color-croc { color: #1565c0; font-weight: bold; }
+
+.text-tilt-right { display: inline-block; transform: rotate(5deg) translateY(-2px); }
+.text-tilt-left { display: inline-block; transform: rotate(-4deg) translateX(2px); }
+
+.bounce-text {
+  display: inline-block;
+  animation: mini-bounce 2s infinite ease-in-out;
+}
+
+@keyframes mini-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+.capy-highlight { background-color: #ffe5ec; padding: 2px 8px; border-radius: 6px; }
+.capy-highlight-alt { background-color: #fff0f3; border-bottom: 3px dashed #ff85a1; padding: 2px 4px; }
+.capy-underline { text-decoration: underline; text-decoration-style: wavy; text-decoration-color: #ff85a1; }
+.intro-paragraph { line-height: 2.2; font-size: 1.15rem; }
+
+ul { padding-left: 25px; list-style-type: '🐾 '; }
+li { margin-bottom: 12px; }
+
+/* --- HORIZONTAL POLAROID GALLERY LAYOUT --- */
+.gallery-grid {
+  display: flex;
+  flex-direction: row;      /* Force them to sit side-by-side */
+  flex-wrap: nowrap;        /* Prevent them from wrapping below */
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.polaroid {
+  background: #ffffff;
+  width: 220px;             /* Perfectly sized for three across */
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-style: solid;
+  border-top-width: 12px;     
+  border-left-width: 12px;    
+  border-right-width: 12px;   
+  border-bottom-width: 42px;  /* Slightly thicker bottom border for neat text fit */
+  border-color: #ffffff;      
+}
+
+.polaroid img { 
+  width: 100%; 
+  height: 150px; 
+  object-fit: cover; 
+  border: 1px solid #e0e0e0; 
+  display: block; 
+}
+
+.caption { 
+  font-family: 'Caveat', cursive; 
+  margin: 0; 
+  font-size: 1.25rem; 
+  font-weight: bold; 
+  color: #5c4d43; 
+  position: relative; 
+  bottom: -22px; 
+  line-height: 1.1;
+}
+
+.tilt-left { transform: rotate(-3deg); }
+.tilt-right { transform: rotate(4deg); }
+.tilt-left-subtle { transform: rotate(-1.5deg); }
+
+.polaroid:hover {
+  transform: rotate(0deg) scale(1.1);
+  box-shadow: 0 15px 30px rgba(201, 122, 142, 0.35);
+  z-index: 10;
+}
+
+button {
+  background-color: #ffb3c6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 5px;
+  font-weight: bold;
+  font-family: 'Fredoka', sans-serif;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+button:hover { background-color: #ff85a1; transform: scale(1.05); }
+.action-card { text-align: center; }
+#status-message { font-weight: bold; margin-top: 15px; color: #8a7366; min-height: 24px; }
+#yuzu-basket { margin-top: 15px; font-size: 2rem; letter-spacing: 5px; min-height: 40px; }
